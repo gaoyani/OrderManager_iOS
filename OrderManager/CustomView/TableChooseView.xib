@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foA-Zu-EeA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-Cv-fRL">
+                    <rect key="frame" x="200" y="100" width="200" height="235"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-xP-Y2R">
+                            <rect key="frame" x="0.0" y="35" width="200" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="xYh-a8-wOI"/>
+                            </constraints>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 请选择需要点餐的餐桌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-rX-UXm">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="iEg-KE-tb3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4Vg-xP-Y2R" secondAttribute="bottom" id="4U3-sL-3FQ"/>
+                        <constraint firstAttribute="width" constant="200" id="Ccv-hC-Ay9"/>
+                        <constraint firstItem="4Vg-xP-Y2R" firstAttribute="leading" secondItem="uD3-Cv-fRL" secondAttribute="leading" id="Dim-UC-nse"/>
+                        <constraint firstAttribute="trailing" secondItem="4Vg-xP-Y2R" secondAttribute="trailing" id="P8s-ub-9cn"/>
+                        <constraint firstAttribute="trailing" secondItem="N2f-rX-UXm" secondAttribute="trailing" id="bpV-eP-ZIS"/>
+                        <constraint firstItem="N2f-rX-UXm" firstAttribute="leading" secondItem="uD3-Cv-fRL" secondAttribute="leading" id="d9q-Gv-ws7"/>
+                        <constraint firstItem="N2f-rX-UXm" firstAttribute="top" secondItem="uD3-Cv-fRL" secondAttribute="top" id="ika-Lq-9lc"/>
+                        <constraint firstItem="4Vg-xP-Y2R" firstAttribute="top" secondItem="N2f-rX-UXm" secondAttribute="bottom" id="lF9-vj-edA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="uD3-Cv-fRL" secondAttribute="centerX" id="2uw-cO-w8n"/>
+                <constraint firstItem="foA-Zu-EeA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="39p-Cc-KJu"/>
+                <constraint firstItem="uD3-Cv-fRL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="6eO-7g-Xp3"/>
+                <constraint firstAttribute="trailing" secondItem="foA-Zu-EeA" secondAttribute="trailing" id="OUL-Lq-PyV"/>
+                <constraint firstAttribute="bottom" secondItem="foA-Zu-EeA" secondAttribute="bottom" id="gzH-3l-eQV"/>
+                <constraint firstItem="foA-Zu-EeA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uaN-my-4zq"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="foA-Zu-EeA" id="XgL-jA-DWU"/>
+                <outlet property="dlgView" destination="uD3-Cv-fRL" id="gsj-wb-lot"/>
+                <outlet property="tableView" destination="4Vg-xP-Y2R" id="wEY-37-rg2"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="285"/>
+        </view>
+    </objects>
+</document>

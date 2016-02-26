@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkW-dI-9wC">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="f3W-dm-f7C">
+                    <rect key="frame" x="180" y="50" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="TId-PE-dAA"/>
+                        <constraint firstAttribute="width" constant="120" id="gji-nY-RgS"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-Li-S3f">
+                    <rect key="frame" x="170" y="333" width="140" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="DOq-DJ-0Tb"/>
+                        <constraint firstAttribute="width" constant="140" id="SzO-Ck-JhT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-M0-KJl">
+                    <rect key="frame" x="170" y="175" width="140" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="QQE-BP-O7H"/>
+                        <constraint firstAttribute="height" constant="35" id="u5G-Q2-pVA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SQD-M0-KJl" firstAttribute="top" secondItem="f3W-dm-f7C" secondAttribute="bottom" constant="5" id="07O-Lr-CN3"/>
+                <constraint firstAttribute="centerX" secondItem="ct2-Li-S3f" secondAttribute="centerX" id="9Zf-sX-wzn"/>
+                <constraint firstAttribute="centerX" secondItem="SQD-M0-KJl" secondAttribute="centerX" id="FsJ-EB-SKI"/>
+                <constraint firstItem="f3W-dm-f7C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="FuP-Qb-KKS"/>
+                <constraint firstAttribute="centerX" secondItem="f3W-dm-f7C" secondAttribute="centerX" id="Vqp-Ug-VsY"/>
+                <constraint firstAttribute="bottom" secondItem="ct2-Li-S3f" secondAttribute="bottom" constant="130" id="boX-WS-gsr"/>
+                <constraint firstItem="tkW-dI-9wC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fay-qc-8Bm"/>
+                <constraint firstAttribute="trailing" secondItem="tkW-dI-9wC" secondAttribute="trailing" id="ktP-7r-X3g"/>
+                <constraint firstAttribute="bottom" secondItem="tkW-dI-9wC" secondAttribute="bottom" id="nvq-cp-59E"/>
+                <constraint firstItem="tkW-dI-9wC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wIL-q3-oWi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcome_bg.png" width="640" height="960"/>
+        <image name="welcome_bottom.png" width="315" height="37"/>
+        <image name="welcome_logo.png" width="238" height="238"/>
+        <image name="welcome_top.png" width="304" height="72"/>
+    </resources>
+</document>

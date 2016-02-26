@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="AddDishesViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb0-mq-Rds">
+                        <rect key="frame" x="8" y="28" width="100" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="syw-v2-JnM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sold_out.png" translatesAutoresizingMaskIntoConstraints="NO" id="SBq-xJ-GAv">
+                        <rect key="frame" x="8" y="8" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="tJ8-PP-9sF"/>
+                            <constraint firstAttribute="width" constant="35" id="y1T-Ca-PH5"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H03-Jr-6XR">
+                        <rect key="frame" x="113" y="12" width="198" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghg-aa-Iqc">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRB-Wb-Mzv" customClass="PKYStepper">
+                                <rect key="frame" x="0.0" y="19" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="INu-iy-hDq"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zgb-9t-kM3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ghg-aa-Iqc" firstAttribute="top" secondItem="H03-Jr-6XR" secondAttribute="top" id="Nj7-62-vTj"/>
+                            <constraint firstItem="ghg-aa-Iqc" firstAttribute="leading" secondItem="H03-Jr-6XR" secondAttribute="leading" id="Tfd-4f-NW3"/>
+                            <constraint firstItem="dRB-Wb-Mzv" firstAttribute="top" secondItem="ghg-aa-Iqc" secondAttribute="bottom" constant="2" id="UgS-oZ-AUm"/>
+                            <constraint firstAttribute="bottom" secondItem="dRB-Wb-Mzv" secondAttribute="bottom" id="ZVl-wS-bo7"/>
+                            <constraint firstItem="dRB-Wb-Mzv" firstAttribute="leading" secondItem="H03-Jr-6XR" secondAttribute="leading" id="aKx-If-beX"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRM-Tc-NKi">
+                        <rect key="frame" x="0.0" y="36" width="417" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4UO-CS-V1a"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="bZ5-hm-agd"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="xRM-Tc-NKi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="6Dc-Jf-1Y6"/>
+                    <constraint firstItem="H03-Jr-6XR" firstAttribute="leading" secondItem="tb0-mq-Rds" secondAttribute="trailing" constant="5" id="7F5-aI-mqi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xRM-Tc-NKi" secondAttribute="bottom" constant="-10" id="Ly6-xE-Xbp"/>
+                    <constraint firstItem="SBq-xJ-GAv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aKg-ub-MS2"/>
+                    <constraint firstAttribute="centerY" secondItem="tb0-mq-Rds" secondAttribute="centerY" id="gi7-Cq-hh3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xRM-Tc-NKi" secondAttribute="trailing" constant="-8" id="meH-ok-zv9"/>
+                    <constraint firstItem="SBq-xJ-GAv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sI5-CU-JGi"/>
+                    <constraint firstAttribute="centerY" secondItem="H03-Jr-6XR" secondAttribute="centerY" id="xsb-HA-nMS"/>
+                    <constraint firstItem="tb0-mq-Rds" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ylN-Uw-lCr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dishesName" destination="tb0-mq-Rds" id="5bJ-br-a2Q"/>
+                <outlet property="price" destination="ghg-aa-Iqc" id="SHh-Xr-Ai0"/>
+                <outlet property="soldOut" destination="SBq-xJ-GAv" id="fdJ-ne-F4j"/>
+                <outlet property="stepper" destination="dRB-Wb-Mzv" id="OAi-Rw-kZc"/>
+            </connections>
+            <point key="canvasLocation" x="315.5" y="243"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sold_out.png" width="50" height="50"/>
+    </resources>
+</document>

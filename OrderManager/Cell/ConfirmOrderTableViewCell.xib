@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ConfirmOrderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwN-am-c8v">
+                        <rect key="frame" x="8" y="13" width="50" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cf4-E2-iqT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVs-FJ-nHf">
+                        <rect key="frame" x="207" y="6" width="100" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="pSz-SO-LAo"/>
+                            <constraint firstAttribute="width" constant="100" id="soV-XX-DYD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="打印预结单">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="printAccountClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="V1a-yH-3dE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NwN-am-c8v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="E1o-M1-oae"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sVs-FJ-nHf" secondAttribute="trailing" constant="5" id="a1D-EI-LhL"/>
+                    <constraint firstItem="sVs-FJ-nHf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oOb-Ed-Z4i"/>
+                    <constraint firstItem="NwN-am-c8v" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="r5f-yO-KrW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderName" destination="NwN-am-c8v" id="NAd-0O-CRC"/>
+                <outlet property="printAccount" destination="sVs-FJ-nHf" id="nkE-6E-RKn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

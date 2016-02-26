@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmOrderedDishesViewController">
+            <connections>
+                <outlet property="loadingView" destination="xVP-4n-e5h" id="D7o-Em-3K3"/>
+                <outlet property="price" destination="Hcq-g8-VUr" id="wuJ-6A-ieL"/>
+                <outlet property="submit" destination="akt-jf-I1h" id="VqM-he-TgP"/>
+                <outlet property="submitView" destination="P4s-5o-RN9" id="Wro-j2-BQa"/>
+                <outlet property="submitViewBG" destination="eHh-an-hMo" id="ISD-HV-toK"/>
+                <outlet property="tableView" destination="q7R-Ng-Z1o" id="38C-om-Jxe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="q7R-Ng-Z1o">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4s-5o-RN9">
+                    <rect key="frame" x="495" y="535" width="105" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="order_confirm_up.png" highlightedImage="order_confirm_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHh-an-hMo">
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="35"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¥0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-g8-VUr">
+                            <rect key="frame" x="5" y="9" width="32" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="C4u-1A-Z6t"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="提交订单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akt-jf-I1h">
+                            <rect key="frame" x="42" y="9" width="60" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eHh-an-hMo" secondAttribute="bottom" id="4y4-QX-EpF"/>
+                        <constraint firstAttribute="centerY" secondItem="akt-jf-I1h" secondAttribute="centerY" id="9Er-OE-kLB"/>
+                        <constraint firstAttribute="centerY" secondItem="Hcq-g8-VUr" secondAttribute="centerY" id="B0f-Sk-wzb"/>
+                        <constraint firstAttribute="trailing" secondItem="akt-jf-I1h" secondAttribute="trailing" constant="5" id="Ha3-3z-a4W"/>
+                        <constraint firstItem="eHh-an-hMo" firstAttribute="leading" secondItem="P4s-5o-RN9" secondAttribute="leading" id="ROg-Jt-eme"/>
+                        <constraint firstAttribute="height" constant="35" id="aXS-Hw-mfd"/>
+                        <constraint firstItem="eHh-an-hMo" firstAttribute="top" secondItem="P4s-5o-RN9" secondAttribute="top" id="lcy-i5-Ma5"/>
+                        <constraint firstItem="Hcq-g8-VUr" firstAttribute="leading" secondItem="P4s-5o-RN9" secondAttribute="leading" constant="5" id="oLM-SA-S2o"/>
+                        <constraint firstAttribute="trailing" secondItem="eHh-an-hMo" secondAttribute="trailing" id="on0-6o-1Fc"/>
+                        <constraint firstItem="akt-jf-I1h" firstAttribute="leading" secondItem="Hcq-g8-VUr" secondAttribute="trailing" constant="5" id="sWn-zg-1ad"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xVP-4n-e5h">
+                    <rect key="frame" x="281" y="282" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xVP-4n-e5h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0By-qY-3OX"/>
+                <constraint firstItem="q7R-Ng-Z1o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6x9-7C-B00"/>
+                <constraint firstAttribute="trailing" secondItem="P4s-5o-RN9" secondAttribute="trailing" id="Hjh-80-jjv"/>
+                <constraint firstItem="xVP-4n-e5h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uja-vL-O6I"/>
+                <constraint firstAttribute="bottom" secondItem="P4s-5o-RN9" secondAttribute="bottom" constant="30" id="dy9-IA-1yZ"/>
+                <constraint firstAttribute="trailing" secondItem="q7R-Ng-Z1o" secondAttribute="trailing" id="fmN-0i-Wag"/>
+                <constraint firstItem="q7R-Ng-Z1o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kDs-Pk-3kf"/>
+                <constraint firstAttribute="bottom" secondItem="q7R-Ng-Z1o" secondAttribute="bottom" id="yYJ-Or-fRp"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_confirm_down.png" width="22" height="33"/>
+        <image name="order_confirm_up.png" width="22" height="33"/>
+    </resources>
+</document>
